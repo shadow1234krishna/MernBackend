@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 5000;
 const mongoURI = process.env.MONGODB_URI ||
   "mongodb+srv://krishna123:krishna123@cluster0.fjxe1zd.mongodb.net/gofoodmern?retryWrites=true&w=majority";
-  connection(mongoURI);
+  
   if(process.env.NODE_ENV==='production'){
     app.use(express.static('client/build'))
   }
